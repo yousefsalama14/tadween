@@ -1,0 +1,107 @@
+/* footer */
+footer{
+    background: linear-gradient(255.24deg, #00928A -25.48%, #004740 206.42%);
+    padding-top: 83px;
+    .row{
+        .text{
+            img{
+                
+            }
+            p{
+                width: 365px;
+                height: 131px;
+                color: #fff;
+                margin-top: 20px;
+                @media #{$smallAndLess}{
+                    width: 100%;
+                }
+                @media #{$extraSmall}{
+                    font-size: 12px;
+                }
+            }
+        }
+        .mail{
+            h3{
+                font-weight: 900;
+                font-size: 20px;
+                color: #fff;
+            }
+            p{
+                color: #fff;
+                width: 260px;
+                font-size: 11px;
+            }
+            .input-group{
+                .form-control{
+                    border: 1px solid #E5E5E5;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    width: 340px;
+                    height: 50px;
+                    background-color: transparent;
+                    color: #fff;
+                    display: inline-block;
+                    &::placeholder{
+                        color: #fff;
+                        opacity: .7;
+                    }
+                    @media #{$smallAndLess}{
+                        display: block;
+                    }
+                    @media #{$extraSmall}{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+                .subscribe-link{
+                    width: 160px;
+                    height: 50px;
+                    color: $fontColor;
+                    background: #fff;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 4px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    margin-left: 30px;
+                    @media #{$extraSmall}{
+                        width: 100%;
+                        margin-left: 0;
+                    }
+                }
+            }
+            @media #{$smallAndLess}{
+                margin: 50px 0;
+            }
+            @media #{$extraSmall}{
+                margin: 0;
+            }
+        }
+        .social{
+            ul{
+                li{
+                    display: inline-block;
+                    a{
+                        width: 30px;
+                        height: 30px;
+                        border: 1px solid #E5E5E5;
+                        border-radius: 50em;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 15px;
+                        img{
+                            
+                        }
+                    }
+                    &:first-child{
+                        a{
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
