@@ -1,6 +1,6 @@
 /* footer */
 footer{
-    background: linear-gradient(255.24deg, #00928A -25.48%, #004740 206.42%);
+    background: #fff;
     padding-top: 83px;
     .row{
         .text{
@@ -10,7 +10,7 @@ footer{
             p{
                 width: 365px;
                 height: 131px;
-                color: #fff;
+                color: #000;
                 margin-top: 20px;
                 @media #{$smallAndLess}{
                     width: 100%;
@@ -24,25 +24,25 @@ footer{
             h3{
                 font-weight: 900;
                 font-size: 20px;
-                color: #fff;
+                color: #000;
             }
             p{
-                color: #fff;
+                color: #000;
                 width: 260px;
                 font-size: 11px;
             }
             .input-group{
                 .form-control{
-                    border: 1px solid #E5E5E5;
+                    border: 1px solid #959595;
                     box-sizing: border-box;
                     border-radius: 4px;
                     width: 340px;
                     height: 50px;
                     background-color: transparent;
-                    color: #fff;
+                    color: #000;
                     display: inline-block;
                     &::placeholder{
-                        color: #fff;
+                        color: #959595;
                         opacity: .7;
                     }
                     @media #{$smallAndLess}{
@@ -56,8 +56,8 @@ footer{
                 .subscribe-link{
                     width: 160px;
                     height: 50px;
-                    color: $fontColor;
-                    background: #fff;
+                    color: #fff ;
+                    background: $mainColor;
                     display: inline-flex;
                     align-items: center;
                     justify-content: center;
@@ -85,7 +85,7 @@ footer{
                     a{
                         width: 30px;
                         height: 30px;
-                        border: 1px solid #E5E5E5;
+                        border: 1px solid #000;
                         border-radius: 50em;
                         display: flex;
                         justify-content: center;

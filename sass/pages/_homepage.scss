@@ -569,3 +569,68 @@ header{
         }
     }
 }
+
+/* footer */
+footer{
+    background: linear-gradient(255.24deg, #00928A -25.48%, #004740 206.42%);
+    .row{
+        .text{
+            img{
+                
+            }
+            p{
+                
+                color: #fff;
+                
+            }
+        }
+        .mail{
+            h3{
+                
+                color: #fff;
+            }
+            p{
+                color: #fff;
+                
+            }
+            .input-group{
+                .form-control{
+                    border: 1px solid #E5E5E5;
+                    
+                    color: #fff;
+                    &::placeholder{
+                        color: #fff;
+                        opacity: .7;
+                    }
+                    
+                }
+                .subscribe-link{
+                   
+                    color: $fontColor;
+                    background: #fff;
+                    
+                    
+                }
+            }
+            
+        }
+        .social{
+            ul{
+                li{
+                    a{
+                        border: 1px solid #E5E5E5;
+                        
+                        img{
+                            
+                        }
+                    }
+                    &:first-child{
+                        a{
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
