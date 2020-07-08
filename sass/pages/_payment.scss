@@ -1,0 +1,146 @@
+/* payment */
+
+.payment{
+    padding: 80px 0;
+    max-width: 400px;
+    margin: auto;
+    @media #{$extraSmall}{
+        max-width: 300px;
+    }
+    .head{
+        h2{
+            font-weight: 800;
+            font-size: 33px;
+            line-height: 22px;
+            color: #000;
+        }
+        p{
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20px;
+            width: 386px;
+            margin: auto;
+            letter-spacing: .3px;
+            @media #{$extraSmall}{
+                max-width: 300px;
+            }
+        }
+    }
+    .images{
+        display: flex;
+        li{
+            width: 30%;
+            height: 54px;
+            border: 1px solid #DADADA;
+            display: flex;
+            border-radius: 6px;
+            img{
+                max-width: 100%;
+                margin: auto;
+            }
+        }
+    }
+    .card-number{
+        text-align: left;
+        form{
+            label{
+                line-height: 22px;
+                color: #000;
+            }     
+            .form-control{
+                width: 23%;
+                height: 54px;
+                display: flex;
+                text-align: center;
+                @media #{$extraSmall}{
+                    width: 23.6%;
+                }
+            }
+        }
+    }
+    .expirdate-cvv{
+        text-align: left;
+        .expiring-date{
+            label{
+                line-height: 22px;
+                color: #000;
+                } 
+            form{   
+                .form-control:first-child{
+                    width: 180px;
+                    height: 54px;
+                }
+            }
+        }
+        .cvv{
+            label{
+                line-height: 22px;
+                color: #000;
+            }
+            form{
+                .form-control:last-child{
+                    width: 87px;
+                    height: 54px;
+                }
+            }
+        }
+        
+    }
+    .name{
+        text-align: left;
+        form{
+            label{
+                line-height: 22px;
+                color: #000;
+                display: block;
+            }     
+            .form-control{
+                width: 100%;
+                height: 54px;
+            }
+        }
+    }
+    .save-card{
+        form{
+            label{
+                line-height: 22px;
+                color: #000;
+                display: block;
+                
+            }     
+            input{
+                font-size: 15px;
+                line-height: 20px;
+                margin-right: 15px;
+            }   
+        }
+    }
+    .add-button{
+        width: 100%;
+        height: 54px;
+        background: #00928A;
+        box-shadow: 0px 8px 27px rgba(0, 146, 138, 0.14);
+        border-radius: 4px;
+        a{
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .terms{
+        text-align: center;
+        h5{
+            color: #000;
+            font-size: 15px;
+            line-height: 20px;
+        }
+        h4{
+            color: $mainColor;
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+}
