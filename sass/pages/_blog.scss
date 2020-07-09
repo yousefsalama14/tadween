@@ -1,0 +1,76 @@
+/* blog */
+
+.blog{
+    padding: 80px 0;
+    .head{
+        max-width: 600px;
+        margin: auto;
+        h2{
+            font-weight: 800;
+            font-size: 42px;
+            line-height: 68.1%;
+        }
+        p{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            text-lign: center;
+            text-indent: 6px;
+        }
+    }
+    .grid-container{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas:
+            "item1 item3 item6"
+            "item1 item3 item6"
+            "item1 item4 item6"
+            "item2 item4 item7"
+            "item2 item5 item7"
+            "item2 item5 item7";
+        .item1{
+            grid-area: item1;
+            background-image: url(../../img/blog/blog7.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .item2{
+            grid-area: item2;
+            background-image: url(../../img/blog/blog2.png);
+        }
+        .item3{
+            grid-area: item3;
+        }
+        .item4{
+            grid-area: item4;
+        }
+        .item5{
+            grid-area: item5;
+        }
+        .item6{
+            grid-area: item6;
+        }
+        .item7{
+            grid-area: item7;
+        }
+        .item{
+            position: relative;
+            .content{
+                position: absolute;
+                bottom: 0;
+                padding: 20px;
+                color: #fff;
+                h2{
+                    
+                }
+                h6{
+                    
+                }
+                p{
+                    
+                }
+            }
+        }
+    }
+}

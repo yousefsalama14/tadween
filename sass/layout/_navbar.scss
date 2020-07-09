@@ -16,10 +16,21 @@
         .navbar-nav{
             .nav-item{
                 margin-right: 50px;
+                position: relative;
                 .nav-link{
                     font-weight: 600;
                     line-height: 22px;
                     color: #525252;
+                }
+                img{
+                    position: absolute;
+                    bottom: -26px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    @media #{$mediumAndLess}{
+                        display: none;
+                    }
                 }
             }
         }
@@ -34,6 +45,14 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    @media #{$mediumAndLess}{
+                        font-weight: 600;
+                        line-height: 22px;
+                        color: #525252;
+                         background: #fff;
+                        display: inline-block;
+                        height: auto;
+                    }
                 }
             }
         }

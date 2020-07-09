@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
+@font-face {
+    font-family: 'AvenirRegular';
+    src: url('../../webfonts/avenir-light.otf') format('opentype');
+    src: url('../../webfonts/avenir-black.otf') format('opentype');
+    src: url('../../webfonts/avenir-book.otf') format('opentype');
+    src: url('../../webfonts/avenir-heavy.otf') format('opentype');
+    src: url('../../webfonts/avenir-light.otf') format('opentype');
+    src: url('../../webfonts/avenir-medium.otf') format('opentype');
+}
+
 body{
-    font-family: $mainFont;
+//    font-family: 'AvenirRegular';
     font-size: 16px;
 }
 
@@ -28,4 +38,19 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+/* keyframes */
+
+@keyframes stayUp {
+  0% {right: -94px;}
+  100% {right: -103px;}
+}
+@keyframes wideVue {
+  0% {left: -224px;}
+  100% {left: -233px;}
+}
+@keyframes control {
+  0% {right: -78px;}
+  100% {right: -88px;}
 }

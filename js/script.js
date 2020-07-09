@@ -6,7 +6,8 @@ $('.packages .owl-carousel').owlCarousel({
     responsive:{
         0:{
             items:1,
-            stagePadding: 0
+            stagePadding: 100,
+            margin:10
         },
         580:{
             items:1,
