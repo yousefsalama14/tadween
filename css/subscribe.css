@@ -921,6 +921,7 @@ footer .row .social ul li:first-child a {
 footer {
   background: #fff;
   padding-top: 83px;
+  border-top: 1px solid #F0F0F0;
 }
 footer .row .text p {
   width: 365px;

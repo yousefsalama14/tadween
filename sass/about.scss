@@ -1,0 +1,10 @@
+@import 'helpers/variables'; //must first
+@import 'helpers/mixins'; //must second
+
+
+@import 'pages/globalPage';
+@import 'layout/grid';
+@import 'layout/navbar';
+@import 'pages/homepage';
+@import 'pages/about';
+@import 'layout/footer';
