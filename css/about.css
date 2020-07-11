@@ -879,8 +879,16 @@ footer .row .social ul li:first-child a {
   margin-top: 32px;
   margin-bottom: 42px;
 }
+.main .content .download-images {
+  display: flex;
+}
 .main .content .download-images img:first-child {
   margin-right: 14px;
+}
+@media (max-width: 575.98px) {
+  .main .content .download-images img {
+    width: 50%;
+  }
 }
 .main .review {
   background: #FFFFFF;
@@ -946,6 +954,30 @@ footer .row .social ul li:first-child a {
   margin: auto;
   letter-spacing: 0.25px;
 }
+@media (max-width: 575.98px) {
+  .main .review {
+    padding: 5px;
+  }
+  .main .review .name .content h2 {
+    font-size: 16px;
+  }
+  .main .review .desc {
+    margin-left: 74px;
+  }
+  .main .review .desc p {
+    font-size: 14px;
+    line-height: 16px;
+    padding-right: 7px;
+  }
+  .main .review .button {
+    width: 138px;
+    height: 42px;
+  }
+  .main .review .button a {
+    font-size: 11px;
+    line-height: 12px;
+  }
+}
 
 /* partner */
 .partner {
@@ -962,6 +994,11 @@ footer .row .social ul li:first-child a {
   font-size: 16px;
   line-height: 118.1%;
   color: #272727;
+}
+@media (max-width: 575.98px) {
+  .turn-up .head h2 img {
+    width: 42%;
+  }
 }
 .turn-up .body {
   box-shadow: none;

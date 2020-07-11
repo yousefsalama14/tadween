@@ -16,8 +16,14 @@
             margin-bottom: 42px;
         }
         .download-images{
+            display: flex;
             img:first-child{
                 margin-right: 14px;
+            }
+            img{
+                @media #{$extraSmall}{
+                    width: 50%;
+                }
             }
         }
     }
@@ -89,6 +95,32 @@
                 letter-spacing: .25px;
             }
         }
+        @media #{$extraSmall}{
+            padding: 5px;
+            .name {
+                .content {
+                    h2{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .desc{
+                margin-left: 74px;
+                p{
+                    font-size: 14px;
+                    line-height: 16px;
+                    padding-right: 7px;
+                }
+            }
+            .button {
+                width: 138px;
+                height: 42px;
+                a{
+                    font-size: 11px;
+                    line-height: 12px;
+                }
+            }
+        }
     }
 }
 
@@ -113,6 +145,13 @@
             font-size: 16px;
             line-height: 118.1%;
             color: #272727;
+        }
+        h2{
+            img{
+                @media #{$extraSmall}{
+                    width: 42%;
+                }
+            }
         }
     }
     .body{

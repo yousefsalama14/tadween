@@ -874,6 +874,11 @@ footer .row .social ul li:first-child a {
   margin-bottom: 10px;
   color: #fff;
 }
+@media (max-width: 575.98px) {
+  .packages .head h3 {
+    font-size: 34px;
+  }
+}
 .packages .billing {
   width: 273px;
   height: 53px;
@@ -916,6 +921,11 @@ footer .row .social ul li:first-child a {
 }
 .packages .owl-carousel .package .head {
   padding: 40px;
+}
+@media (max-width: 575.98px) {
+  .packages .owl-carousel .package .head {
+    padding: 15px;
+  }
 }
 /* footer */
 footer {
