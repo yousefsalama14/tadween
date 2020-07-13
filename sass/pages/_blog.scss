@@ -5,8 +5,9 @@
     .head{
         max-width: 600px;
         margin: auto;
+        margin-bottom: 70px;
         h2{
-            font-weight: 800;
+            font-weight: 700;
             font-size: 42px;
             line-height: 68.1%;
         }
@@ -14,83 +15,124 @@
             font-weight: 500;
             font-size: 18px;
             line-height: 25px;
-            text-lign: center;
             text-indent: 6px;
         }
     }
-    .body{
+    .grid-container{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas:
+            "item1 item3 item6"
+            "item1 item3 item6"
+            "item1 item4 item6"
+            "item2 item4 item7"
+            "item2 item5 item7"
+            "item2 item5 item7";
+        .item1{
+            grid-area: item1;
+        }
+        .item2{
+            grid-area: item2;
+        }
+        .item3{
+            grid-area: item3;
+        }
+        .item4{
+            grid-area: item4;
+        }
+        .item5{
+            grid-area: item5;
+        }
+        .item6{
+            grid-area: item6;
+        }
+        .item7{
+            grid-area: item7;
+        }
         .item{
+            position: relative;
+            border-radius: 6px;
+            transition: all 2s ease-in-out;
+            overflow: hidden;
+            .overlay {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              opacity: 0;
+              background: #1c1d21;
+              z-index: 0;
+                transition: all .5s ease-in-out;
+            }
             .image{
-                height: 422px;
-                background-image: url(../../img/blog/blog7.png);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+                
             }
             .content{
-                display: none;
+                opacity: 0;
+                position: absolute;
+                bottom: 0;
+                padding: 20px;
+                color: #fff;
+                transition: all .5s ease-in-out;
+                h2{
+                    
+                }
+                h6{
+                    
+                }
+                p{
+                    
+                }
+            }
+            &:hover{
+                .content{
+                    opacity: 1;
+                }
+                .overlay{
+                    opacity: 0.5;
+                }
+            }
+        }
+        @media #{$extraSmall}{
+            grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+            "item7";
+            .item{
+                .overlay{
+                    display: none;
+                }
+                .content{
+                    opacity: 1;
+                    position: static;
+                    h2{
+                        font-weight: 900;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: #171717;
+                    }
+                    h6{
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: #666666;
+                        span{
+                            color: $mainColor;
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #666666;
+                        margin-top: 1rem;
+                    }
+                }
             }
         }
     }
-    
-//    .grid-container{
-//        display: grid;
-//        grid-gap: 10px;
-//        grid-template-areas:
-//            "item1 item3 item6"
-//            "item1 item3 item6"
-//            "item1 item4 item6"
-//            "item2 item4 item7"
-//            "item2 item5 item7"
-//            "item2 item5 item7";
-//        .item1{
-//            grid-area: item1;
-//        }
-//        .item2{
-//            grid-area: item2;
-//        }
-//        .item3{
-//            grid-area: item3;
-//        }
-//        .item4{
-//            grid-area: item4;
-//        }
-//        .item5{
-//            grid-area: item5;
-//        }
-//        .item6{
-//            grid-area: item6;
-//        }
-//        .item7{
-//            grid-area: item7;
-//        }
-//        .item{
-//            position: relative;
-//            width: 422px;
-//            height: 422px;
-//            background-image: url(../../img/blog/blog1.png);
-//            background-size: cover;
-//            background-repeat: no-repeat;
-//            background-position: center;
-//            .image{
-//                
-//            }
-//            .content{
-//                display: none;
-//                position: absolute;
-//                bottom: 0;
-//                padding: 20px;
-//                color: #fff;
-//                h2{
-//                    
-//                }
-//                h6{
-//                    
-//                }
-//                p{
-//                    
-//                }
-//            }
-//        }
-//    }
 }
